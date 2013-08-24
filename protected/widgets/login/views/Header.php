@@ -1,5 +1,5 @@
         
-        <a href="http://marrydoor.com" class="logo" ></a>
+        <a href="<?php echo Yii::app()->params['homeUrl']; ?>" class="logo" ></a>
                 <?php $userName = Yii::app()->session->get('username');?>
                 <?php $user = Yii::app()->session->get('user');?>
  <?php if(isset($userName)) {?>

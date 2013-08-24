@@ -90,7 +90,7 @@
 		<div id="tab1_data" class="tab-data" style="display: block;">
 		
 			<article class="section width100 no-padd">
-			<form id="regularSearch"  name="regularSearch" method="post"  action="/search/regular">
+			<form id="regularSearch"  name="regularSearch" method="post"  action="<?php echo Yii::app()->params['homeUrl']; ?>/search/regular">
 				<ul>
 					<li>
 						<div class="title">
