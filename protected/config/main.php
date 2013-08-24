@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Marry Door',
+	'name'=>'MOS',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -55,7 +55,7 @@ return array(
         'cookieMode' => 'allow',
         'cookieParams' => array(
             'path' => '/',
-            'domain' => '.natarajanonline.com/mos',
+            'domain' => '.natarajanonline.com',
             'httpOnly' => true,
         ),
     	),
@@ -111,7 +111,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 		'resourceUrl' => 'http://natarajanonline.com/mos',
-		'homeUrl' => 'http://natarajanonline.com/mos',
+		'homeUrl' => 'http://natarajanonline.com/mos/index.php',
 		'mediaUrl' => 'http://natarajanonline.com/mos/images',
 		'sslmediaUrl' => 'https://natarajanonline.com/mos/images',
 		'scriptUrl' => 'http://natarajanonline.com/mos',

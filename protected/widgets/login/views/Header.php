@@ -30,12 +30,12 @@
 				<p>Email / User ID</p>
 					<input type="text" class="validate[required]"  tabindex="1"  id="user" name="LoginForm[username]"/>
 				
-				<a href="/guest/user">New User?</a>
+				<a href="<?php echo Yii::app()->params['homeUrl'] ?>/guest/user">New User?</a>
 			</div>
 			<div class="login-contnr">
 				<p>Password</p>
 				<input type="password" class="validate[required]" tabindex="2" id="password" name="LoginForm[password]" />
-				<a href="/guest/forget" id="forgotPassword">Forgot Password?</a>
+				<a href="<?php echo Yii::app()->params['homeUrl'] ?>/guest/forget" id="forgotPassword">Forgot Password?</a>
 			</div>
 			<?php echo CHtml::submitButton('Login',array('class'=>'type2b','tabindex'=>'3')); ?>
 		<?php echo CHtml::endForm(); ?>
