@@ -418,9 +418,9 @@ class Utilities
  		$protocol = 'http';
  	}
  	if($protocol == "https"){
-    		$selfUrl = 'http://'.$_SERVER['SERVER_NAME']."/".$controller."/".$action;
+    		$selfUrl = Yii::app()->params['homeUrlssl']."/".$controller."/".$action;
     	}else{
-    		$selfUrl = 'http://'.$_SERVER['SERVER_NAME']."/".$controller."/".$action;
+    		$selfUrl = Yii::app()->params['homeUrl']."/".$controller."/".$action;
     	}
     	if(!empty($params)){
     		$selfUrl.= "?";

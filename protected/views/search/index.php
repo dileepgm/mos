@@ -26,7 +26,7 @@
 	<?php } ?>        
 	
         <h1 class="mB10">Quick Search</h1>
-        <form id="quickSearch"  name="quickSearch" method="post"  action="/search/quick">
+        <form id="quickSearch"  name="quickSearch" method="post"  action="<?php echo Utilities::createAbsoluteUrl('search','quick') ;?>">
         <ul class="accOverview mT12">
 			<li class="mB10">
 				<div class="radC">
@@ -90,7 +90,7 @@
 		<div id="tab1_data" class="tab-data" style="display: block;">
 		
 			<article class="section width100 no-padd">
-			<form id="regularSearch"  name="regularSearch" method="post"  action="<?php echo Yii::app()->params['homeUrl']; ?>/search/regular">
+			<form id="regularSearch"  name="regularSearch" method="post"  action="<?php echo Utilities::createAbsoluteUrl('search','regular') ;?>">
 				<ul>
 					<li>
 						<div class="title">
@@ -261,7 +261,7 @@
 		</div>
 		<div id="tab2_data" class="tab-data" style="display: none;">
 			<article class="section width100 no-padd">
-			<form id="advanceSearch"  name="advanceSearch" method="post"  action="/search/advance">        
+			<form id="advanceSearch"  name="advanceSearch" method="post"  action="<?php echo Utilities::createAbsoluteUrl('search','advance') ;?>">        
 				<ul>
 					<li>
 						<div class="title">
@@ -681,7 +681,7 @@
 			<div class="sId">
 				<p>Enter a Keyword of the member whose profile you would like to see.</p>
 				<div class="sec">
-				<form id="keywordSearch"  name="keywordSearch" method="post"  action="/search/keyword">
+				<form id="keywordSearch"  name="keywordSearch" method="post"  action="<?php echo Utilities::createAbsoluteUrl('search','keyword') ;?>">
 					<div class="text"> Enter a Keyword</div>
 					<input type="text" name="keyword" id="keyword" placeholder="Eg: f,24 or male,28 or name"/>
 					<a href="javascript:keywordSearch.submit();" class="type3 wid100">Search</a>
@@ -695,7 +695,7 @@
 			<div class="sId">
 				<p>Enter the Matrimony ID of the member whose profile you would like to see.</p>
 				<div class="sec">
-				<form id="idSearch"  name="idSearch" method="get"  action="/search/byid">
+				<form id="idSearch"  name="idSearch" method="get"  action="<?php echo Utilities::createAbsoluteUrl('search','byid') ;?>">
 					<div class="text"> Matrimony ID </div>
 					<input type="text" name="id" id="id" />
 					<a href="javascript:idSearch.submit();" class="type3 wid100">View Profile</a>

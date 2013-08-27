@@ -8,7 +8,7 @@
 		<ul id="tab1_data" class="tab-data">
 		<?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'users-register-form',
-	'action' => Yii::app()->createUrl('user/register'),
+	'action' => Yii::app()->params['homeUrl'].'user/register',
 	'enableAjaxValidation'=>false,
 )); ?>
 		<?php echo $form->errorSummary($model); ?>
@@ -159,7 +159,7 @@
 			
 			<?php $searchForm=$this->beginWidget('CActiveForm', array(
 	'id'=>'users-search-searchForm',
-	'action' => Yii::app()->createUrl('search/basic'),
+	'action' => Yii::app()->params['homeUrl'].'/search/basic',
 )); ?>	
 
 
@@ -293,7 +293,7 @@
 	</section>
 	<aside class="rightbar-contnr">
 		<div class="searchID">
-		<form id="keywordSearch"  name="keywordSearch" method="get"  action="/search/byid">
+		<form id="keywordSearch"  name="keywordSearch" method="get"  action="<?php echo Yii::app()->params['homeUrl']; ?>/search/byid">
 			<input name="id" type="text" class="validate[required]"  placeholder="Search By ID / Keyword" />
 			<?php echo CHtml::submitButton('Search',array('class'=>'type2b')); ?>
 		</form>	

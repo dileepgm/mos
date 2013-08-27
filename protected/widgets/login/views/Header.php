@@ -11,10 +11,10 @@
   			<?php echo $userName; echo " ".$user['marryId']?> 
   			</span>
   			|
-  			<a class="logout" href="/site/logout">Logout</a></div>
+  			<a class="logout" href="<?php echo Utilities::createAbsoluteUrl('site','logout') ;?>">Logout</a></div>
   			<!-- search box -->
   			<div class="search-container">
-			<form id="hkeywordSearch"  name="hkeywordSearch" method="get"  action="/search/byid">
+			<form id="hkeywordSearch"  name="hkeywordSearch" method="get"  action="<?php echo Utilities::createAbsoluteUrl('search','byid') ;?>">
             <input name="id" type="text" class="validate[required]"  placeholder="Search By ID" />
             <?php echo CHtml::submitButton('Search',array('class'=>'type2b')); ?>
 			</form>	
@@ -25,17 +25,17 @@
 			  			
         <div class="user-login">
         
-<?php echo CHtml::beginForm(Yii::app()->createUrl('site/login'),'post',array('name'=>'LoginForm','id'=>'LoginForm'));?>
+<?php echo CHtml::beginForm(Utilities::createAbsoluteUrl('site','login'),'post',array('name'=>'LoginForm','id'=>'LoginForm'));?>
 			<div class="login-contnr">
 				<p>Email / User ID</p>
 					<input type="text" class="validate[required]"  tabindex="1"  id="user" name="LoginForm[username]"/>
 				
-				<a href="<?php echo Yii::app()->params['homeUrl'] ?>/guest/user">New User?</a>
+				<a href="<?php echo Utilities::createAbsoluteUrl('guest','user') ;?>">New User?</a>
 			</div>
 			<div class="login-contnr">
 				<p>Password</p>
 				<input type="password" class="validate[required]" tabindex="2" id="password" name="LoginForm[password]" />
-				<a href="<?php echo Yii::app()->params['homeUrl'] ?>/guest/forget" id="forgotPassword">Forgot Password?</a>
+				<a href="<?php echo Utilities::createAbsoluteUrl('guest','forget') ;?>" id="forgotPassword">Forgot Password?</a>
 			</div>
 			<?php echo CHtml::submitButton('Login',array('class'=>'type2b','tabindex'=>'3')); ?>
 		<?php echo CHtml::endForm(); ?>

@@ -32,7 +32,7 @@ class SiteController extends Controller
         		return true;
                 $user = Yii::app()->session->get('user');
                 if(isset($user)) {
-                        $this->redirect(array('/mypage'));
+                        $this->redirect(Utilities::createAbsoluteUrl('mypage','index'));
                         return true;
                 }       
                 return true;
@@ -120,7 +120,7 @@ class SiteController extends Controller
 				$userloggeddetails->loggedIn = new CDbExpression('NOW()');
 				$userloggeddetails->loggedOut = new CDbExpression('NOW()');
 				$userloggeddetails->save();
-				$this->redirect(array('/mypage/complete'));
+				$this->redirect(Utilities::createAbsoluteUrl('mypage','complete'));
 			}
 			else
 			{	

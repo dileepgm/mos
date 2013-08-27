@@ -35,7 +35,7 @@
 				<p class="tCenter"> By filling up your complete details, you increase your chance of getting more relevant responses. Go to view profile below to complete your profile.</p>
 			</li>
 			<li class="visitorBtnC mT20">
-				<a href="/mypage/profile">View Profile</a>
+				<a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">View Profile</a>
 			</li>
 		</ul>
 		<?php 
@@ -44,7 +44,7 @@
 		
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Contact details not yet added : <a href="/mypage/profile">Update Now</a></h2>
+				<h2>Contact details not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Update Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your contact details to get responses from better matches.</p> 
@@ -55,7 +55,7 @@
 		<?php if($family) {?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Family details not yet added : <a href="/mypage/profile">Update Now</a></h2>
+				<h2>Family details not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Update Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your family details to get responses from better matches.</p>
@@ -65,7 +65,7 @@
 		<?php if($physical) {?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Physical details not yet added : <a href="/mypage/profile">Update Now</a></h2>
+				<h2>Physical details not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Update Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your physical details to get responses from better matches.</p>
@@ -75,7 +75,7 @@
 		<?php if($education) {?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Education details not yet added : <a href="/mypage/profile">Update Now</a></h2>
+				<h2>Education details not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Update Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your education details to get responses from better matches.</p>
@@ -85,7 +85,7 @@
 		<?php if($partner) { ?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Partner preference details not yet added : <a href="/mypage/profile">Update Now</a></h2>
+				<h2>Partner preference details not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Update Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your partner preference details to get responses from better matches.</p>
@@ -95,7 +95,7 @@
 		<?php if($hobbies) { ?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Hobbies details not yet added : <a href="/mypage/profile">Update Now</a></h2>
+				<h2>Hobbies details not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Update Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your hobbies details to get responses from better matches.</p>
@@ -107,7 +107,7 @@
 		{?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Profile picture not yet added : <a href="/mypage/profile">Upload Now</a></h2>
+				<h2>Profile picture not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Upload Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your profile picture to get responses from better matches. <br />By adding a profile picture you increase the credibility of your profile. </p>
@@ -121,7 +121,7 @@
 		
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>Family album not yet added : <a href="/mypage/profile">Upload Now</a></h2>
+				<h2>Family album not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Upload Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Please add your family album since wedding is a family affair. <br />It will help interested candidates to get to know your family well in advance.</p>
@@ -134,7 +134,7 @@
 		?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>My documents not yet added : <a href="/mypage/profile">Upload Now</a></h2>
+				<h2>My documents not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Upload Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">By filling up the my detailed section you can let others know about you education, date of birth and place of stay. </p>
@@ -146,7 +146,7 @@
 		?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>My astro details not yet added  : <a href="/mypage/profile">Upload Now</a></h2>
+				<h2>My astro details not yet added  : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Upload Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">BY adding my astro details or horoscope you can increase your chances of getting responses from the right candidate.</p>
@@ -159,7 +159,7 @@
 		?>
 		<ul class="accOverview pTB15">
 			<li>
-				<h2>My reference not yet added : <a href="/mypage/profile">Upload Now</a></h2>
+				<h2>My reference not yet added : <a href="<?php echo Utilities::createAbsoluteUrl('mypage','profile') ;?>">Upload Now</a></h2>
 			</li>
 			<li>
 				<p class="tCenter">Adding my reference information is a way to let other give you a testimonial. </p>
